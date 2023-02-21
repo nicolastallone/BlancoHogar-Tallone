@@ -11,7 +11,7 @@ const App = () => {
     <ChakraProvider>
       
         <NavBar/>
-        <ItemListContainer saludo={'Bienvenido'}/>
+        <ItemListContainer saludo={'Bienvenido a Blanco Hogar'}/>
 
     </ChakraProvider>
     </>
