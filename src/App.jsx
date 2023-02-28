@@ -1,22 +1,13 @@
-import NavBar from './components/NavBar'
-import ItemListContainer from './components/ItemListContainer'
-import { ChakraProvider } from '@chakra-ui/react'
-
-
+import NavBar from "./components/NavBar";
+import ItemListContainer from "./components/ItemListContainer";
 
 const App = () => {
-
   return (
     <>
-    <ChakraProvider>
-      
-        <NavBar/>
-        <ItemListContainer saludo={'Bienvenido a Blanco Hogar'}/>
-
-    </ChakraProvider>
+      <NavBar />
+      <ItemListContainer saludo={"Bienvenido a Blanco Hogar"} />
     </>
-    
-  )
-}
+  );
+};
 
-export default App
+export default App;
