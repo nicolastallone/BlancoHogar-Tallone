@@ -1,46 +1,58 @@
 import React from "react";
 import CartWidget from "./CartWidget";
-import { Container, Button, ButtonGroup, Box, Menu, MenuButton, MenuList, MenuItem, Flex, Spacer, Heading, Breadcrumb, BreadcrumbItem, BreadcrumbLink } from "@chakra-ui/react";
+import Logo from "../assets/logobh.png";
 
 const NavBar = () => {
   return (
     <>
-        <Flex minWidth='max-content' alignItems='center' gap='2'>
-            <Box p='2'>
-                <Heading size='md'>Blanco Hogar</Heading>
-            </Box>
-        <Spacer />
-        <Breadcrumb separator='-'>
-            <BreadcrumbItem>
-                <BreadcrumbLink href='#'>Home</BreadcrumbLink>
-            </BreadcrumbItem>
-
-            <BreadcrumbItem>
-            <Menu>
-                <MenuButton>
-                    Productos
-                </MenuButton>
-                <MenuList>
-                    <MenuItem>Sabanas</MenuItem>
-                    <MenuItem>Acolchados</MenuItem>
-                    <MenuItem>Toallas</MenuItem>
-                </MenuList>
-                </Menu>
-            </BreadcrumbItem>
-
-            <BreadcrumbItem isCurrentPage>
-                <BreadcrumbLink href='#'>Contact</BreadcrumbLink>
-            </BreadcrumbItem>
-        </Breadcrumb>
-        <Spacer />
-        <ButtonGroup gap='2'>
-            <Button colorScheme='teal'>Crear Cuenta</Button>
-            <Button colorScheme='teal'>Ingresar</Button>
-            <CartWidget/>
-        </ButtonGroup>
-        </Flex>
-
-
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
+            <img src={Logo} width="60" alt="BlancoHogar" />
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarText">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">
+                  Inicio
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Productos
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Contacto
+                </a>
+              </li>
+            </ul>
+            <span className="navbar-text">
+              <div className="d-flex gap-3">
+                <button type="button" className="btn btn-success">
+                  Ingresar
+                </button>
+                <button type="button" className="btn btn-info">
+                  Crear Cuenta
+                </button>
+              </div>
+            </span>
+            <CartWidget />
+          </div>
+        </div>
+      </nav>
     </>
   );
 };
