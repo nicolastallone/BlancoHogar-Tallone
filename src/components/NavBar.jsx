@@ -25,20 +25,25 @@ const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarText">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <a className="nav-link active" aria-current="page" href="/">
                   Inicio
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href={"/productos"}>
                   Productos
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Contacto
-                </a>
-              </li>
+              <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categorias
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Sabanas</a></li>
+            <li><a class="dropdown-item" href="#">Frazadas</a></li>
+            <li><a class="dropdown-item" href="#">Almohadas</a></li>
+          </ul>
+        </li>
             </ul>
             <span className="navbar-text">
               <div className="d-flex gap-3">
@@ -50,7 +55,9 @@ const NavBar = () => {
                 </button>
               </div>
             </span>
+            <a href="/cart">
             <CartWidget />
+            </a>
           </div>
         </div>
       </nav>
