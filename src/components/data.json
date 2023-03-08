@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "nombre": "Sabana",
+        "imagen": "https://d2r9epyceweg5n.cloudfront.net/stores/089/625/products/jaru-111-5b6ddc66928bcebc2316099502693912-1024-1024.png" ,
+        "descripcion": "Juego de Sabanas Arco Iris 2 y 1/2 plazas Percal 180 Hilos 48% Algodon 52% Poliester",
+        "stock": 4,
+        "precio": 1000
+    },
+    {
+        "id": 2,
+        "nombre": "Almohada",
+        "imagen": "https://d3ugyf2ht6aenh.cloudfront.net/stores/102/037/products/viscoelastica1-e8344c64fc08ccd25e15430026487698-480-0.webp" ,
+        "descripcion": "Almohada inteligente",
+        "stock": 2,
+        "precio": 700
+    },
+    {
+        "id": 3,
+        "nombre": "Frazada",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_926295-MLA49853901920_052022-W.jpg" ,
+        "descripcion": "Frazada 2 plazas",
+        "stock": 1,
+        "precio": 1500
+    }
+]
