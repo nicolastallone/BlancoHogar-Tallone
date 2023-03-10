@@ -3,27 +3,33 @@ import { useState, useEffect } from "react";
 import Logo from "../assets/logobh.png";
 import ItemList from "./ItemList"
 import Data from "./data.json"
+import { useParams } from "react-router-dom";
 
 
 const ItemListContainer = ({}) => {
 const [productos, setProductos] = useState([])
+const {categoria} = useParams()
 
-  useEffect(()=>{
+/*   useEffect(()=>{
     async function fetchData(){
       try{
         const response = await fetch(Data)
-        const data = await response.json()
-        setProductos(data)
+        const productos = await response.json()
+        setProductos(productos)
       } catch (error){
         console.log("error")
       }
     }
     fetchData()
-  },[])
+  },[]) */
+
+  const catFilter = productos.filter((producto) => producto.categoria === categoria )
+
   return (
-
-    <ItemList productos={Data}/>
-
+    <div>
+      {!categoria ? <h2>Productos</h2> : <h2>{`${categoria}`}</h2>}
+      {categoria ? <ItemList productos={catFilter}/> : <ItemList productos={Data}/> }
+    </div>
   );
 };
 

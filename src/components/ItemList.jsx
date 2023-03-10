@@ -1,21 +1,19 @@
-// Es un agrupador de un set de componentes de Item.jxs (debera incluirse en ItemListContainer
-
-
 import React from 'react'
 import Item from "./Item"
 
 const itemList = ({ productos }) => {
   return (
     <div>
-        {productos?.map((producto) => (
+        {productos.map((productos) => (
             <Item 
-            key={producto.id}
-            id={producto.id}
-            nombre={producto.nombre}
-            descripcion={producto.descripcion}
-            stock={producto.precio}
-            precio={producto.precio}
-            imagen={producto.imagen}
+            key={productos.id}
+            id={productos.id}
+            nombre={productos.nombre}
+            categoria={productos.categoria}
+            descripcion={productos.descripcion}
+            stock={productos.precio}
+            precio={productos.precio}
+            imagen={productos.imagen}
             />
         ))}
     </div>
