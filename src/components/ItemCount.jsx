@@ -1,4 +1,6 @@
 import { useContext, useState } from "react";
+import { CounterContext } from "../context/StateComponent";
+
 
 const ItemCount = ({ stock, id, precio, nombre }) => {
   const [count, setCount] = useState(1);

@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 import Data from "./data.json";
-import ItemDetail from './ItemDetail';
+import ItemDetail from "./ItemDetail";
 
 const ItemDetailContainer = () => {
   return (
     <>
-        <ItemDetail data={Data}/>
+      <ItemDetail data={Data} />
     </>
-  )
-}
+  );
+};
 
-export default ItemDetailContainer
+export default ItemDetailContainer;

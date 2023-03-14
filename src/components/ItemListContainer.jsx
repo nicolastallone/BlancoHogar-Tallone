@@ -1,6 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import Logo from "../assets/logobh.png";
+import { useState, useEffect } from "react";  
 import ItemList from "./ItemList"
 import Data from "./data.json"
 import { useParams } from "react-router-dom";
@@ -10,7 +9,7 @@ const ItemListContainer = ({}) => {
 const [productos, setProductos] = useState([])
 const {categoria} = useParams()
 
-/*   useEffect(()=>{
+  useEffect(()=>{
     async function fetchData(){
       try{
         const response = await fetch(Data)
@@ -21,9 +20,9 @@ const {categoria} = useParams()
       }
     }
     fetchData()
-  },[]) */
+  },[])
 
-  const catFilter = productos.filter((producto) => producto.categoria === categoria )
+  const catFilter = Data.filter((producto) => producto.categoria === categoria )
 
   return (
     <div>

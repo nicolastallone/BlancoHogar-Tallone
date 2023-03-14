@@ -26,18 +26,18 @@ const NavBar = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <Link to={'/'}>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page">
+                <nav className="nav-link active" aria-current="page">
                   Inicio
-                </a>
+                </nav>
               </li>
               </Link>
               <Link to={'/productos'}>
               <li className="nav-item">
-                <a className="nav-link">Productos</a>
+                <nav className="nav-link">Productos</nav>
               </li>
               </Link>
               <li className="nav-item dropdown">
-                <a
+                <nav
                   className="nav-link dropdown-toggle"
                   href="#"
                   role="button"
@@ -45,27 +45,27 @@ const NavBar = () => {
                   aria-expanded="false"
                 >
                   Categorias
-                </a>
+                </nav>
                 <ul className="dropdown-menu">
                   <li>
                     <Link to={`/categoria/${"Sabanas"}`}>
-                    <a className="dropdown-item" href="#">
+                    <nav className="dropdown-item" href="#">
                       Sabanas
-                    </a>
+                    </nav>
                     </Link>
                   </li>
                   <li>
                     <Link to={`/categoria/${"Frazadas"}`}>
-                    <a className="dropdown-item" href="#">
+                    <nav className="dropdown-item" href="#">
                       Frazadas
-                    </a>
+                    </nav>
                     </Link>
                   </li>
                   <li>
                     <Link to={`/categoria/${"Almohadas"}`}>
-                    <a className="dropdown-item" href="#">
+                    <nav className="dropdown-item" href="#">
                       Almohadas
-                    </a>
+                    </nav>
                     </Link>
                   </li>
                 </ul>
