@@ -6,24 +6,27 @@ import Bienvenido from "./components/Bienvenido";
 import ItemDetail from "./components/ItemDetail";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import StateComponent from "./context/StateComponent";
+import ShoppingCartProvider from "./components/ShoppingCartProvider";
 
 const App = () => {
   return (
     <>
-      <StateComponent>
-        <NavBar />
-        <Routes>
-          <Route exact path="/" element={<Bienvenido />} />
-          <Route exact path="/productos" element={<ItemListContainer />} />
-          <Route
-            exact
-            path="/categoria/:categoria"
-            element={<ItemListContainer />}
-          />
-          <Route exact path="/item/:id" element={<ItemDetailContainer />} />
-          <Route exact path="/cart" element={<Cart />} />
-        </Routes>
-      </StateComponent>
+      {/* <ShoppingCartProvider> */}
+        <StateComponent>
+          <NavBar />
+          <Routes>
+            <Route exact path="/" element={<Bienvenido />} />
+            <Route exact path="/productos" element={<ItemListContainer />} />
+            <Route
+              exact
+              path="/categoria/:categoria"
+              element={<ItemListContainer />}
+            />
+            <Route exact path="/item/:id" element={<ItemDetailContainer />} />
+            <Route exact path="/cart" element={<Cart />} />
+          </Routes>
+        </StateComponent>
+      {/* </ShoppingCartProvider> */}
     </>
   );
 };

@@ -8,7 +8,7 @@ const Cart = () => {
   if (cart === "vacio") {
     return (
       <>
-        <div>
+        <div className="container d-flex justify-content-center">
           <h1>El carrito esta vacio...</h1>
           <Link to={"/productos"}>
             <button>Ver productos</button>
@@ -19,7 +19,7 @@ const Cart = () => {
   } else {
     return (
       <>
-        <div>
+        <div className="container d-flex justify-content-center">
           <h3>Tu carrito de compras</h3>
           <FormCart />
         </div>

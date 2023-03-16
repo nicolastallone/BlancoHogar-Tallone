@@ -25,8 +25,7 @@ const {categoria} = useParams()
   const catFilter = Data.filter((producto) => producto.categoria === categoria )
 
   return (
-    <div>
-      {!categoria ? <h2>Productos</h2> : <h2>{`${categoria}`}</h2>}
+    <div className="container-fluid d-flex justify-content-center">
       {categoria ? <ItemList productos={catFilter}/> : <ItemList productos={Data}/> }
     </div>
   );

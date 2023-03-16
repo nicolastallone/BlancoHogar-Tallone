@@ -3,7 +3,7 @@ import Item from "./Item"
 
 const itemList = ({ productos }) => {
   return (
-    <div>
+    <div className='row d-flex justify-content-center'>
         {productos.map((productos) => (
             <Item 
             key={productos.id}

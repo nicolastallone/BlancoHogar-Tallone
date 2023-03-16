@@ -10,8 +10,8 @@ const ItemDetail = ({ data }) => {
   return (
     <>
       {dataFilter.map((dato) => (
-        <div key={dato.id} className="row align-items-center m-4">
-          <div className="card text-center col">
+        <div key={dato.id} className="col-4 text-center">
+          <div className="card">
             <img src={dato.imagen} className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">{dato.nombre}</h5>

@@ -13,9 +13,9 @@ const item = ({
   precio,
 }) => {
   return (
-    <div className="container text-center">
-      <div key={id} className="row align-items-center m-4">
-        <div className="card text-center col-4">
+    <div key={id} className="col-4 text-center">
+     
+        <div className="card">
           <img src={imagen} className="card-img-top" alt="..." />
           <div className="card-body">
             <h5 className="card-title">{nombre}</h5>
@@ -29,7 +29,6 @@ const item = ({
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

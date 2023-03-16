@@ -4,9 +4,9 @@ import ItemDetail from "./ItemDetail";
 
 const ItemDetailContainer = () => {
   return (
-    <>
+    <div className="container d-flex justify-content-center">
       <ItemDetail data={Data} />
-    </>
+    </div>
   );
 };
 
